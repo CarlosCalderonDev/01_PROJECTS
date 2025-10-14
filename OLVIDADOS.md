@@ -150,8 +150,6 @@ Módulos transversales para la administración del sistema.
 
 
 
-
-
 ### 7.3 Soporte técnico
 
 * Tickets y asistencia
