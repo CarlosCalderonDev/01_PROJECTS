@@ -158,3 +158,11 @@ Módulos transversales para la administración del sistema.
 * Chat interno / bot de soporte
 * Registro de incidencias
 
+## **6. Estrategia y Analítica**
+
+Datos para decisiones inteligentes.
+
+### 6.1 Dashboard
+
+* Panel de indicadores (ventas, citas, ingresos, etc.)
+* Reportes automáticos en tiempo real

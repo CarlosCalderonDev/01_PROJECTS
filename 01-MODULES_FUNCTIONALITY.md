@@ -20,14 +20,7 @@ Módulos que ejecutan la lógica directa del negocio.
 * Impuestos (IVA, retenciones, etc.)
 * Integración con contabilidad
 
-## **6. Estrategia y Analítica**
 
-Datos para decisiones inteligentes.
-
-### 6.1 Dashboard
-
-* Panel de indicadores (ventas, citas, ingresos, etc.)
-* Reportes automáticos en tiempo real
 
 ### 7.2 Usuarios y seguridad
 
