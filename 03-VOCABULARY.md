@@ -1,40 +1,30 @@
-# 03-VOCABULARY
+# 03-VOCABULARY 📚
 
-## 1. **Entidades**
+> Documento de referencia para estandarizar términos, conceptos y vocabulario utilizado en el proyecto.
 
-* **Usuario**: Cliente, administrador o profesional del servicio.
-* **Cita**: Registro con fecha, hora, estado (pendiente, confirmada, cancelada).
-* **Servicio**: Tipo de atención (consulta, asesoría, etc.).
-* **Recurso**: Profesional, sala o equipo asociado a la cita.
-* **Notificación**: Mensajes enviados al cliente (email, SMS, app).
+> 1. Objetivo: Definir de forma clara, breve y estandarizada cada término utilizado en el proyecto, con el fin de evitar confusiones en el equipo y acelerar la comunicación durante análisis, reuniones y desarrollo.
 
----
+> 2. Convenciones x Palabra: {Tipo , Definición , Contexto de uso , Ejemplo , Relacionado con}
 
-## 2. **Reglas de negocio**
+# 03.1-VOCABULARY-BUSINESS_LOGIC
 
-* No se pueden agendar dos citas en el mismo horario para el mismo recurso.
-* La cita debe estar dentro del horario laboral del recurso.
-* Un cliente solo puede cancelar hasta X horas antes de la cita.
-* Ciertas citas requieren pago anticipado para confirmarse.
-* Notificaciones obligatorias: confirmación, recordatorio, cancelación.
-
----
-
-## 3. **Procesos de negocio**
-
-* **Agendar cita**: Cliente selecciona servicio → sistema valida disponibilidad → genera cita → envía confirmación.
-* **Cancelar cita**: Cliente solicita cancelación → sistema valida plazo permitido → actualiza estado → notifica a todos los involucrados.
-* **Reprogramar cita**: Cliente selecciona nuevo horario → sistema valida disponibilidad → actualiza cita → notifica.
-* **Recordatorio automático**: Sistema identifica citas próximas → envía notificación al cliente y al recurso.
+Citas:
+    Agendar
+    Cancelar
+    Reprogramar
+    Recordatorio
 
 
 
+Actores
+Usuario
+Servicio
+Recurso
+Notificación
 
+# 03.2-VOCABULARY-GENERAL_SYSTEMS_THEORY_(GST)
 
-
-## 🧠 TERMINOLOGÍA ESENCIAL EN DISEÑO DE SISTEMAS
-
-#### 🔹 Nivel 1: Conceptos básicos
+# 03.3-VOCABULARY-PROGRAMMING
 
 | Término                | Significado                                                              |
 | ---------------------- | ------------------------------------------------------------------------ |
@@ -55,19 +45,37 @@
 | **Herencia**        | Permite que una clase derive de otra.                               |
 | **Composición**     | Relación donde una clase contiene otras clases como partes.         |
 
-📌 *Aplica en TypeScript, Go (con structs/interfaces), JavaScript, etc.*
+
+# 03.4-VOCABULARY-ONE_FOR_ALL
+
+#### 🔹 Nivel 1: Conceptos básicos
+
+
 
 ---
 
-#### 🔹 Nivel 3: Modelado y arquitectura de sistemas
+## 📚 3. Glosario
 
-| Término                        | Significado                                                                  |
-| ------------------------------ | ---------------------------------------------------------------------------- |
-| **Actor**                      | Entidad externa que interactúa con el sistema (Usuario, Admin, API externa). |
-| **Caso de uso**                | Escenario funcional que describe qué hace el sistema (ej: “Emitir factura”). |
-| **Componente**                 | Unidad lógica independiente (ej: servicio de correo, módulo de pagos).       |
-| **Servicio (Service)**         | Lógica de negocio que cumple una función (ej: `FacturaService`).             |
-| **Repositorio (Repository)**   | Abstracción para acceder a datos (ej: `UserRepository` → DB).                |
-| **Controlador (Controller)**   | Punto de entrada para recibir solicitudes HTTP.                              |
-| **DTO (Data Transfer Object)** | Objeto para transferir datos entre capas o servicios.                        |
-| **Middleware**                 | Componente que intercepta peticiones/respuestas en la aplicación.            |
+> Agrega cada término usando esta estructura:
+
+### **{Nombre del Término}**
+- **Tipo:** (Ejemplo: Proceso, Entidad, Recurso, Estado, Actor, Regla de negocio, Métrica, etc.)
+- **Definición:** Descripción corta, clara y sin ambigüedades.
+- **Contexto de uso:** Dónde y cuándo aplica en el negocio/proyecto.
+- **Ejemplo:** (Opcional)
+- **Relacionado con:** (Opcional: lista de términos del mismo glosario)
+
+---
+
+
+### **Recurso**
+- **Tipo:** Entidad del negocio
+- **Definición:** Elemento que presta la atención o sobre el cual se agenda una cita. Puede ser una persona o un recurso físico.
+- **Relacionado con:** *Agenda, Tipos de Recurso*
+
+---
+
+## 📌 4. Notas del Documento
+- Este glosario es *vivo*: se actualiza conforme evoluciona el negocio o el sistema.
+- Cada nuevo término debe incorporarse **antes** de nuevas reuniones o desarrollos.
+
